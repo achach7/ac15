@@ -12,7 +12,11 @@
         // });
         myWindow = window.open("https://ac13.netlify.app/postmsg_lab");
 
-        window.onload() = myWindow.postMessage("achabi test");
+        function postMsg() {
+            myWindow.postMessage("achabi test");
+        }
+
+        setTimeout(postMsg, 3000);
 
     </script>
     
